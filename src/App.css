@@ -29,17 +29,17 @@ a{
   color: #fff;
 }
 .slide-show > div > a{
-  background-color: #fff;
-  color:#000;
+  background-color: rgb(230, 85, 64);;
+  color:#fff;
   font-size: 18px;
   border-radius: 50px;
   padding: 10px;
   transition: all .2s linear;
 }
-.slide-show > div > a:hover{
+/* .slide-show > div > a:hover{
   background-color:rgb(230, 85, 64);
   color: #fff;
-}
+} */
 .slide-show > button{
   font-size: 18px;
   background-color: transparent;

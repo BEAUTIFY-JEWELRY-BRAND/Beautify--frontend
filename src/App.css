@@ -96,7 +96,7 @@ a{
   height: inherit;
   display: inline-flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 30px;
   background-color: #fff;
 }
 .jewelries > div > a:hover, .sun-glasses > div >a:hover, .watches > div > a:hover{

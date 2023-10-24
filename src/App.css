@@ -106,7 +106,7 @@ a{
 
 .block{
   background: url("./assets/images/bg-01.jpg.webp");
-  padding: 150px 80px;
+  padding: 80px 80px;
   display:grid;
   gap: 10px;
 }

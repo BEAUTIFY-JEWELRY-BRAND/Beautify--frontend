@@ -61,10 +61,10 @@ a{
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .explore > div{
-  width: 95%;
+  width: 92%;
   position: relative;
   margin: auto;
   text-align: center;

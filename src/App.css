@@ -64,7 +64,7 @@ a{
   margin-top: 30px;
 }
 .explore > div{
-  width: 80%;
+  width: 95%;
   position: relative;
   margin: auto;
   text-align: center;
@@ -74,7 +74,6 @@ a{
 .watches{
   display: flex;
   overflow: hidden;
-  max-width: 90%;
 }
 .explore > div > img{
   width: 100%;

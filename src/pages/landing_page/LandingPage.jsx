@@ -1,18 +1,19 @@
-import { Header } from "../components/header/Header";
-import JewelryBanner from "../assets/images/1.webp";
-import GlassesBanner from "../assets/images/02.jpg";
-import watchesBanner from "../assets/images/2.jpg";
+import "./landing_page.css"
+import { LandingPageHeader } from "../../components/header/Header";
+import JewelryBanner from "../../assets/images/1.webp";
+import GlassesBanner from "../../assets/images/02.jpg";
+import watchesBanner from "../../assets/images/2.jpg";
 
-export const Home = () => {
+export const LandingPage = () => {
     return(
         <>
-            <Header />
-            <div>
+            <LandingPageHeader />
+            <div className="landing-page">
                 <div className="slide-show">
                     <button>&lt;</button>
                     <div>
                         <p>Shop With Style</p>
-                        <a href="">SHOP NOW</a>
+                        <a href="">GET STARTED</a>
                     </div>
                     <button>&gt;</button>
                 </div>

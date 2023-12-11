@@ -1,0 +1,80 @@
+.shop{
+    height: 100%;
+}
+.container{
+    background: url("../../assets/images/bg-01.jpg.webp");
+    height: 100%;
+    padding: 10px 0;
+    display: grid;
+    gap: 50px;
+}
+.container h3{
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+}
+.container > .banner{
+    width: 100%;
+}
+.container > .banner > img{
+    width: 100%;
+}
+.categories_section{
+    text-align: center;
+    padding: 0 10px;
+}
+.categories_section > h3 > span {
+    padding: 1px 15px;
+    border-radius:100%;
+    background-color: rgb(230, 85, 64);
+}
+.categories{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.categories > .card{
+    text-align: center;
+}
+.categories > .card > img{
+    width: 120px;
+    height: 120px;
+}
+.categories > .card > p{
+    font-size: 1.3rem;
+}
+
+.item_display{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.items_grid{
+    width: 100%;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction:rtl;
+    gap: 30px 20px;
+}
+.items_grid > .item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.items_grid > .item > img{
+    width: 100%;
+}
+.items_grid > .item > p{
+    font-size: 1.5rem;
+    color: rgb(230, 85, 64);
+}
+.items_grid > .item > button{
+    padding: 15px;
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #000;
+}

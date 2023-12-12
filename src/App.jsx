@@ -6,13 +6,14 @@ import { Signup } from './pages/signup/Signup'
 import { Shop } from './pages/shop/Shop'
 
 function App() {
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
 
   return (
     <div className='app'>
       <Router>
         <Routes>
           <Route exact path='/' element={<LandingPage/>}/>
-          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/signup' element={<Signup userStatus={setIsUserLoggedIn}/>}/>
           <Route path='/shop' element={<Shop/>}/>
         </Routes>
       </Router>

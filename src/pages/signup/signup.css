@@ -1,0 +1,61 @@
+.signup{
+    width: 100%;
+}
+.signup-form-container{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.signup-form-wrapper{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+.signup-form-wrapper > h1{
+    padding: 20px;
+}
+.signup-form-wrapper > form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0px;
+}
+.signup-form-wrapper > form > input, .signup-form-wrapper > form > button{
+    display: block;
+    margin: auto;
+}
+.signup-form-wrapper > form > input{
+    width: 100%;
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: rgba(211, 211, 211, 0.493);
+    transition:all .2s linear;
+}
+.signup-form-wrapper > form > input:focus{
+    outline: none;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.signup-form-wrapper > form > button{
+    border: none;
+    width: 70%;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.signup-form-wrapper > form > button#get_started{
+    background-color: #000;
+    color: #FDF5E6;
+    margin-top: 20px;
+}
+.signup-form-wrapper > form > button#get-started-with-google{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.signup-form-wrapper > form > p{
+    font-size: 18px;
+}

@@ -19,21 +19,21 @@ export const LandingPage = () => {
                 </div>
                 <div className="explore">
                     <div className="jewelries">
-                        <img src={JewelryBanner} alt="jewelry banner" srcset="" />
+                        <img src={JewelryBanner} alt="jewelry banner"  />
                         <div>
                             <a href="">Jewelries</a>
                         </div>
                         
                     </div>
                     <div className="sun-glasses">
-                        <img src={GlassesBanner} alt="glasses banner" srcset="" />
+                        <img src={GlassesBanner} alt="glasses banner" />
                         <div>
                             <a href="">Sun Glasses</a>
                         </div>
                         
                     </div>
                     <div className="watches">
-                        <img src={watchesBanner} alt="watches banner" srcset="" />
+                        <img src={watchesBanner} alt="watches banner"/>
                         <div>
                             <a href="">Wrist Watches</a>
                         </div>

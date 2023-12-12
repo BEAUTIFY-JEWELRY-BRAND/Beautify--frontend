@@ -11,24 +11,18 @@ import snapchat from '../../assets/icons/snapchat.png';
 import whatsapp from '../../assets/icons/whatsapp.png';
 import SearchIcon from '../../assets/icons/SearchIcon.png'
 
-export const Header = (props) => {
-    
-    
-    const headerDisplay = document.getElementById("header");
-    if(props.fixed === true){
-        headerDisplay.style.position === "fixed"
-    }
-    
+export const Header = (props) => {        
+    const headerElem = document.getElementById("header");
     const [showNavbar, setShowNavbar] = useState(false);
-
     const openNavbar = () => {
         setShowNavbar(true);
     }
     const closeNavbar = () => {
         setShowNavbar(false);
     }
+
     return(
-        <div className="header" id="header">
+        <div className={`header ${props.fixed? "headerFixed":"headerStatic"} `} id="header">
             <section>
                 <a href="">
                     <img src={logo} alt="logo/link-to-home"/>

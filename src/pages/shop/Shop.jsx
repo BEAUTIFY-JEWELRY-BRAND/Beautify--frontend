@@ -2,22 +2,30 @@ import "./shop.css"
 import { Header } from "../../components/header/Header"
 import Banner from "../../assets/images/8.jpg"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export const Shop = () => {
     const [fixed, setFixed] = useState(false)
-    const container = document.getElementById("container");
-    if(window.scrollY === "50px"){
+    window.onscroll=()=>{
         setFixed(true)
+        if(window.scrollY === 0){
+            setFixed(false);
+        }
     }
-    
     return(
         <div className="shop">
-            <Header fixed={fixed} setFixed={setFixed} />
+            <Header fixed={fixed}/>
             <article className="container">
                 <div className="banner">
+                    <div className="categories_section">
+                        <Link to="">Glasses</Link>
+                        <Link to="">Jewelry</Link>
+                        <Link to="">Men's Wrist-Watches</Link>
+                        <Link to="">Women's Wrist-Watches</Link>
+                    </div>
                     <img src={Banner} alt="Banner" />
                 </div>
-                <div className="categories_section">
+                {/* <div className="categories_section">
                     <h3>Categories</h3>
                     <div className="categories">
                         <div className="card">
@@ -33,7 +41,7 @@ export const Shop = () => {
                             <p>Sun Glasses</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="item_display">
                     <h3>Top Sales</h3>
                     <div className="items_grid">

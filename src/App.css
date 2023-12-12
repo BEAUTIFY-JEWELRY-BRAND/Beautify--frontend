@@ -4,6 +4,10 @@
   margin: 0;
   transition: .2s all linear;
 }
+.app{
+  min-height: 100vh;
+  /* background: url("./assets/images/bg-01.jpg.webp"); */
+}
 a{
   text-decoration: none;
 }

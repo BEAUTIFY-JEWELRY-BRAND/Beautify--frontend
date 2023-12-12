@@ -1,5 +1,5 @@
 .landing-page{
-  background: url("../../assets/images/bg-01.jpg.webp");
+  /* background: url("../../assets/images/bg-01.jpg.webp"); */
 }
 .slide-show{
     width: 100%;
@@ -79,7 +79,7 @@
   .explore > div > div{
     width: 100%;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     height: 50px;
   }
   .jewelries > div > a, .sun-glasses > div >a, .watches > div > a {
@@ -98,7 +98,7 @@
   }
   
   .block{
-    background: url("./assets/images/bg-01.jpg.webp");
+    /* background: url("../../assets/images/bg-01.jpg.webp"); */
     padding: 80px 80px;
     display:grid;
     gap: 10px;

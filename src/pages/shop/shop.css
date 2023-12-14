@@ -20,18 +20,22 @@
     overflow: hidden;
 }
 .categories_section{
-    max-width: 100%;
+    max-width: max-content;
+    margin: auto;
     display: flex;
-    gap: 30px;
+    gap: 5px;
     text-align: center;
     padding: 10px 10px 20px;
     overflow: hidden;
     text-wrap: nowrap;
     overflow-x: scroll;
 }
+.categories_section > p{
+    font-size: 16px;
+}
 .categories_section > a {
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
+    color: green;
 }
 .categories_section > a:visited{
     color: #000;

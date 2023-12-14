@@ -18,10 +18,8 @@ export const Shop = (props) => {
             <article className="container">
                 <div className="banner">
                     <div className="categories_section">
-                        <Link to="">Glasses</Link>
-                        <Link to="">Jewelry</Link>
-                        <Link to="">Men's Wrist-Watches</Link>
-                        <Link to="">Women's Wrist-Watches</Link>
+                        <p>20% Discount on every purchase</p>
+                        <Link to="/inventory">Shop Now</Link>
                     </div>
                     <img src={Banner} alt="Banner" />
                 </div>

@@ -5,6 +5,7 @@ import { LandingPage } from './pages/landing_page/LandingPage'
 import { Signup } from './pages/signup/Signup'
 import { Shop } from './pages/shop/Shop'
 import { Login } from './pages/login/Login'
+import { Inventory } from './pages/inventory/inventory'
 
 function App() {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
@@ -17,6 +18,7 @@ function App() {
           <Route path='/signup' element={<Signup userStatus={setIsUserLoggedIn}/>}/>
           <Route path='/login' element={<Login userStatus={setIsUserLoggedIn}/>}/>
           <Route path='/shop' element={<Shop userStatus={isUserLoggedIn}/>}/>
+          <Route path='/inventory' element={<Inventory userStatus={isUserLoggedIn}/>}/>
         </Routes>
       </Router>
     </div>

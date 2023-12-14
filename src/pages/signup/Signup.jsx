@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Header } from '../../components/header/Header'
-import { useNavigate } from 'react-router-dom';
-import {auth} from '../../config/firebase'
-import {createUserWithEmailAndPassword, signOut} from 'firebase/auth'
+import { useNavigate, Link } from 'react-router-dom';
+import {auth, googleProvider} from '../../config/firebase'
+import {createUserWithEmailAndPassword, signInWithPopup,signOut} from 'firebase/auth'
 import './signup.css'
 export const Signup = (props) => {
     const navigate = new useNavigate();
@@ -11,7 +11,7 @@ export const Signup = (props) => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
-    const getStarted = async (e) => {
+    const SignupWithEmail = async (e) => {
         e.preventDefault();
         if(confirmPassword !== password){
             console.log("please check that the password is correct")
@@ -20,7 +20,19 @@ export const Signup = (props) => {
         try{
             await createUserWithEmailAndPassword(auth, email, password)
             .then(userCredential => {
-                props.userStatus(true);
+                console.log(userCredential);
+                navigate("/shop")
+            })
+        }catch(err){
+            console.log(err)
+        }
+        
+    }
+    const SignupWithGoogle = async (e) => {
+        e.preventDefault();
+        try{
+            await signInWithPopup(auth, googleProvider)
+            .then(userCredential => {
                 console.log(userCredential);
                 navigate("/shop")
             })
@@ -42,13 +54,14 @@ export const Signup = (props) => {
             <div className='signup-form-container'>
                 <div className='signup-form-wrapper'>
                     <h1>Shop Like A Star</h1>
-                    <form onSubmit={e=>getStarted(e)}>
+                    <form onSubmit={e=>SignupWithEmail(e)}>
                         <input type="email" placeholder="Email..." onChange={(e) => setEmail(e.target.value)} required/>
                         <input type="password" placeholder="Password..." onChange={(e)=>setPassword(e.target.value)} required/>
                         <input type="password" placeholder="Confirm password..." onChange={(e) => setConfirmPassword(e.target.value)} required/>
-                        <button id='get_started' onClick={e=>getStarted(e)}>Get Started</button>
+                        <button id='get_started' onClick={e=>SignupWithEmail(e)}>Get Started</button>
                         <p>Or</p>
-                        <button id='get-started-with-google'>Signup With Google</button>
+                        <button id='get-started-with-google' onClick={(e)=>SignupWithGoogle(e)}>Signup With Google</button>
+                        <article>Already have an account? <Link to="/login">Login</Link></article>
                         <button onClick={e=>logout(e)}>logout</button>
                     </form>
                     

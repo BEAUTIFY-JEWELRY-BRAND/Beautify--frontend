@@ -4,7 +4,7 @@ import Banner from "../../assets/images/8.jpg"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-export const Shop = () => {
+export const Shop = (props) => {
     const [fixed, setFixed] = useState(false)
     window.onscroll=()=>{
         setFixed(true)

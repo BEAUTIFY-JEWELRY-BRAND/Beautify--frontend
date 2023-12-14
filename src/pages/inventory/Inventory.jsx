@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './inventory.css'
 import { Header } from "../../components/header/Header"
 
 export const Inventory = () => {

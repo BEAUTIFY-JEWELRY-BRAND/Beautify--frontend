@@ -29,6 +29,7 @@
     overflow: hidden;
     text-wrap: nowrap;
     overflow-x: scroll;
+    background-color: #000;
 }
 .categories_section > p{
     font-size: 16px;

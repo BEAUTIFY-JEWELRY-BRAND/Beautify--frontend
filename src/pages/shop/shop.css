@@ -19,7 +19,7 @@
     max-width: 100%;
     overflow: hidden;
 }
-.categories_section{
+.promo_message{
     max-width: max-content;
     margin: auto;
     display: flex;
@@ -30,36 +30,20 @@
     text-wrap: nowrap;
     overflow-x: scroll;
 }
-.categories_section > p{
+.promo_message > p{
     font-size: 16px;
 }
-.categories_section > a {
+.promo_message > a {
     font-size: 16px;
     color: green;
 }
 .categories_section > a:visited{
-    color: #000;
+    color: green;
 }
 .container > .banner > img{
     width: 100%;
     height: auto;
 }
-.categories{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-}
-.categories > .card{
-    text-align: center;
-}
-.categories > .card > img{
-    width: 120px;
-    height: 120px;
-}
-.categories > .card > p{
-    font-size: 1.3rem;
-}
-
 .item_display{
     text-align: center;
     padding: 50px 0 10px;

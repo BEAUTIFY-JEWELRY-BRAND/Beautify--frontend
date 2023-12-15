@@ -74,7 +74,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     direction:rtl;
-    gap: 5px 5px;
+    gap: 10px 10px;
 }
 .items_grid > .item{
     text-align: center;

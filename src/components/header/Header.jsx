@@ -87,10 +87,10 @@ export const LandingPageHeader = () => {
                 <div className='links-right'>
                     <Link to="/signup">
                         Sign Up
-                    </a>
+                    </Link>
                     <Link to="/login">
                         Login
-                    </a>
+                    </Link>
                 </div>
             </section>  
         </div>

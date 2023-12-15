@@ -65,6 +65,9 @@
     padding: 50px 0 10px;
     background-color: #fff;
 }
+.item_display > h3{
+    font-size: 1.5rem;
+}
 .items_grid{
     width: 100%;
     padding: 0 10px;

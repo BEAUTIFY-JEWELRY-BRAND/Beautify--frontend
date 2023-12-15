@@ -77,7 +77,7 @@ export const Header = (props) => {
         </div>
     )
 }
-export const LandingPageHeader = () => {
+export const LandingPageHeader = (props) => {
     return(
         <div className="header" id="header">
             <section>
@@ -86,7 +86,7 @@ export const LandingPageHeader = () => {
                 </a>
                 <div className='links-right'>
                     <Link to="/signup">
-                        Sign Up
+                        Signup
                     </Link>
                     <Link to="/login">
                         Login

@@ -5,7 +5,7 @@ import { LandingPage } from './pages/landing_page/LandingPage'
 import { Signup } from './pages/signup/Signup'
 import { Shop } from './pages/shop/Shop'
 import { Login } from './pages/login/Login'
-import { Inventory } from './pages/inventory/inventory'
+import { Inventory } from './pages/inventory/Inventory'
 
 function App() {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);

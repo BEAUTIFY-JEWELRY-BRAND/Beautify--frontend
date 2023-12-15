@@ -17,7 +17,7 @@ export const Shop = (props) => {
             <Header fixed={fixed}/>
             <article className="container">
                 <div className="banner">
-                    <div className="categories_section">
+                    <div className="promo_message">
                         <p>20% Discount on every purchase</p>
                         <Link to="/inventory">Shop Now</Link>
                     </div>

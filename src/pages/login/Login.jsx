@@ -43,7 +43,7 @@ export const Login = (props) => {
 
     return(
         <div className="login">
-            <LandingPageHeader />
+            <LandingPageHeader value={"Sign Up"}/>
             <div className='login-form-container'>
                 <div className='login-form-wrapper'>
                     <h1>Login for a better exerience</h1>

@@ -50,7 +50,7 @@ export const Signup = (props) => {
     }
     return(
         <div className="signup">
-            <LandingPageHeader />
+            <LandingPageHeader value={"Login"}/>
             <div className='signup-form-container'>
                 <div className='signup-form-wrapper'>
                     <h1>Shop Like A Star</h1>

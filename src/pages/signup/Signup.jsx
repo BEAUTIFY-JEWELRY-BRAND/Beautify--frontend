@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Header } from '../../components/header/Header'
+import {LandingPageHeader } from '../../components/header/Header'
 import { useNavigate, Link } from 'react-router-dom';
 import {auth, googleProvider} from '../../config/firebase'
 import {createUserWithEmailAndPassword, signInWithPopup,signOut} from 'firebase/auth'
@@ -50,7 +50,7 @@ export const Signup = (props) => {
     }
     return(
         <div className="signup">
-            <Header />
+            <LandingPageHeader />
             <div className='signup-form-container'>
                 <div className='signup-form-wrapper'>
                     <h1>Shop Like A Star</h1>

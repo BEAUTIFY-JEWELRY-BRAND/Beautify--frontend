@@ -1,5 +1,6 @@
 import './header.css';
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 import logo from '../../assets/images/logo.png.webp';
 import profileIcon from '../../assets/icons/user.png';
 import bagIcon from '../../assets/icons/parcel.png';
@@ -84,11 +85,11 @@ export const LandingPageHeader = () => {
                     <img src={logo} alt="logo/link-to-home"/>
                 </a>
                 <div className='links-right'>
-                    <a href="">
-                        <img src={bagIcon} alt="shopping bag"/>
+                    <Link to="/signup">
+                        Sign Up
                     </a>
-                    <a href="">
-                        <img src={profileIcon} alt="profile"/>
+                    <Link to="/login">
+                        Login
                     </a>
                 </div>
             </section>  

@@ -18,6 +18,7 @@ export const LandingPage = () => {
                     <button>&gt;</button>
                 </div>
                 <div className="explore">
+                    <h1>What We Sell</h1>
                     <div className="jewelries">
                         <img src={JewelryBanner} alt="jewelry banner"  />
                         <div>

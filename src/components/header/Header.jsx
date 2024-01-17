@@ -13,7 +13,6 @@ import whatsapp from '../../assets/icons/whatsapp.png';
 import SearchIcon from '../../assets/icons/SearchIcon.png'
 
 export const Header = (props) => {        
-    const headerElem = document.getElementById("header");
     const [showNavbar, setShowNavbar] = useState(false);
     const openNavbar = () => {
         setShowNavbar(true);
@@ -24,7 +23,7 @@ export const Header = (props) => {
 
     return(
         <div className={`header ${props.fixed? "headerFixed":"headerStatic"} `} id="header">
-            <section>
+            <section className='header-main'>
                 <a href="">
                     <img src={logo} alt="logo/link-to-home"/>
                 </a>
@@ -42,6 +41,13 @@ export const Header = (props) => {
             </section> 
             {showNavbar ? <section id='hidden-or-visible' className='dropdown-navbar'>
                 <button id='close_dropdown' onClick={closeNavbar}>&times;</button>
+                <div>
+                    <Link>Login</Link>
+                    <Link>Sign Up</Link>
+                </div>
+                <div>
+                    <p>Hey, User</p>
+                </div>
                 <section>
                     {/* <div className='social-links'>
                         <a href="">
@@ -80,13 +86,13 @@ export const Header = (props) => {
 export const LandingPageHeader = (props) => {
     return(
         <div className="header" id="header">
-            <section>
+            <section className='header-main'>
                 <a href="">
                     <img src={logo} alt="logo/link-to-home"/>
                 </a>
                 <div className='links-right'>
                     <Link to="/signup">
-                        Signup
+                        Sign Up
                     </Link>
                     <Link to="/login">
                         Login

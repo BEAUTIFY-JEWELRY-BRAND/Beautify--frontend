@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Bill-Banna blue ray",
+        "type": "glasses",
+        "price": 119,
+        "sex": "unisex",
+        "description":"Lorem Ipsum Dot Amet const element dior ket set une timonedr epicolater ofaciilutttts"
+    },
+    {
+        "name": "Louis vuitton power",
+        "type": "glasses",
+        "price": 219,
+        "sex": "male",
+        "description":"Lorem Ipsum Dot Amet const element dior ket set une timonedr epicolater ofaciilutttts"
+    },
+    {
+        "name": "Versace fly",
+        "type": "glasses",
+        "price": 153,
+        "sex": "female",
+        "description":"Lorem Ipsum Dot Amet const element dior ket set une timonedr epicolater ofaciilutttts"
+    },
+    {
+        "name": "Tommy hilfilger moon",
+        "type": "glasses",
+        "price": 191,
+        "sex": "unisex",
+        "description":"Lorem Ipsum Dot Amet const element dior ket set une timonedr epicolater ofaciilutttts"
+    }
+]

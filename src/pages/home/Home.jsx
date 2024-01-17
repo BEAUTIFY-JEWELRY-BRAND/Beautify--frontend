@@ -1,10 +1,11 @@
-import "./shop.css"
+import "./home.css"
 import { Header } from "../../components/header/Header"
 import Banner from "../../assets/images/8.jpg"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { Items } from "../../components/items-listing/Items"
 
-export const Shop = (props) => {
+export const Home = (props) => {
     const [fixed, setFixed] = useState(false)
     window.onscroll=()=>{
         setFixed(true)
@@ -41,29 +42,8 @@ export const Shop = (props) => {
                     </div>
                 </div> */}
                 <div className="item_display">
-                    <h3>Top Sales</h3>
-                    <div className="items_grid">
-                        <div className="item">
-                            <img src={Banner} alt="item_cover"/>
-                            <p>$266</p>
-                            <button>Add to Bag</button>
-                        </div>
-                        <div className="item">
-                            <img src={Banner} alt="item_cover"/>
-                            <p>$266</p>
-                            <button>Add to Bag</button>
-                        </div>
-                        <div className="item">
-                            <img src={Banner} alt="item_cover"/>
-                            <p>$266</p>
-                            <button>Add to Bag</button>
-                        </div>
-                        <div className="item">
-                            <img src={Banner} alt="item_cover"/>
-                            <p>$266</p>
-                            <button>Add to Bag</button>
-                        </div>
-                    </div>
+                    <h3>Recommended For You</h3>
+                    <Items />
                 </div>               
             </article>
         </div>

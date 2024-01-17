@@ -1,0 +1,42 @@
+.inventory{
+    width: 100%;
+}
+.inventory > form{
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+}
+.inventory > form > input{
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.493);
+}
+.inventory > form > input:focus{
+    /* border: none;*/
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+}
+.inventory > form > button{
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.inventory > .categories-group{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    gap: 5px;
+}
+.inventory > .categories-group > button{
+    width: 100%;
+    padding: 5px 0;
+    background-color: #fff;
+    outline: 0;
+    border: 1px solid #14141422;
+    font-size: 13px;
+}

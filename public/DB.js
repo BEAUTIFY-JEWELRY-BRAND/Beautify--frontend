@@ -31,3 +31,4 @@ export const DB = [
         "description":"Lorem Ipsum Dot Amet const element dior ket set une timonedr epicolater ofaciilutttts"
     }
 ]
+export const Cart = []

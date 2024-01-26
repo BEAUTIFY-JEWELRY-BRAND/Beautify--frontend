@@ -13,22 +13,24 @@ h1{
     grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
-.items_grid > a{
+.item_wrapper{
+    height: fit-content;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+.item_wrapper > a{
     color: #000;
 }
-.items_grid > .item{
-    height: fit-content;
+.item_wrapper > .item{
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 0px;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px;
 }
-.items_grid > .item > img{
+.item_wrapper > .item > img{
     width: 100%;
 }
-.items_grid > .item > div{
+.item_wrapper > .item > div, .item_wrapper > div{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -39,11 +41,11 @@ h1{
     font-size: 15px;
     text-align: left;
 }
-.item > div > p{
+.item_wrapper > div > p{
     font-size: 13px;
     color: rgb(230, 85, 64);
 }
-.item > div > button{
+.item_wrapper > div > button{
     padding: auto;
     font-size: 14px;
     background-color: #fff;

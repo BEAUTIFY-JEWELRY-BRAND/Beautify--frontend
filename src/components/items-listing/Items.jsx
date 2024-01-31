@@ -5,12 +5,12 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import cart from '../../../dummyDb/cart.json'
 
-export const Items = () => {
-    const [items, setItems] = useState([]);
-    const [cartObject, setCartObject] = useState({})
-    useEffect(()=>{
-        setItems(DB);
-    },[])
+export const Items = (props) => {
+    // const [items, setItems] = useState([]);
+    // const [cartObject, setCartObject] = useState({})
+    // useEffect(()=>{
+    //     setItems(DB);
+    // },[])
 
     const addToCart = (name, price) => {
         setCartObject({
@@ -22,7 +22,7 @@ export const Items = () => {
     return(
         <div className="items">
             <div className="items_grid">
-                {items.map((data, key)=> (
+                {props.allProducts.map((data, key)=> (
                     <div key={key} className='item_wrapper'>
                         <Link to={`/item/${data.id}`} className="item">
                             <img src={Banner} alt="item_cover"/>

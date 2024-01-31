@@ -1,23 +1,33 @@
 import { useEffect, useState } from "react"
 import './item.css'
-import {DB} from '../../../../public/DB'
+
 import { useParams } from "react-router-dom"
 import Banner from "../../../assets/images/8.jpg"
 import { Header } from "../../../components/header/Header"
+import {db} from '../../../config/firebase'
+import {doc, getDoc} from 'firebase/firestore'
 
 export const Item = () => {
     const [itemName, setItemName] = useState("");
     const [itemPrice, setItemPrice] = useState(0);
     const [sex, setSex] = useState("");
-    let param = useParams('/items/:id');
-    var item;
 
+    let param = useParams('/item/:id');
+    const docRef = doc(db, "inventory", param.id);
     useEffect(()=>{
-        item = DB[param.id];
-        setItemName(item.name);
-        setItemPrice(item.price);
-        setSex(item.sex);
-        console.log(item);
+        const getProduct = async() => {
+            const product = await getDoc(docRef);
+            try{
+                console.log(param)
+                console.log(product.data())
+                setItemName(product?.data()?.name)
+                setItemPrice(product?.data()?.price)
+                setSex(product?.data()?.sex);
+            }catch(err){
+                console.error(err)
+            }
+        }
+        getProduct()
     }, [])
     
     // param=take?.id;

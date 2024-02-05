@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { LandingPageHeader } from '../../components/header/Header'
 import { useNavigate, Link } from 'react-router-dom';
 import {auth, googleProvider} from '../../config/firebase'
-import {signInWithEmailAndPassword, signInWithPopup,signOut} from 'firebase/auth'
+import {signInWithEmailAndPassword, signInWithPopup,signOut, } from 'firebase/auth'
 import './login.css'
 
 export const Login = (props) => {

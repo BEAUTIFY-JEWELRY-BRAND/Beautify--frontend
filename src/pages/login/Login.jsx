@@ -26,7 +26,7 @@ export const Login = (props) => {
             await signInWithPopup(auth, googleProvider)
             .then(userCredential => {
                 console.log(userCredential);
-                navigate("/shop");
+                navigate("/");
             })
         }catch(err){
             console.log(err);
@@ -37,7 +37,7 @@ export const Login = (props) => {
         e.preventDefault();
         await signOut(auth)
         .then(() => {
-            navigate("/login");
+            navigate("/");
         })        
     }
 
